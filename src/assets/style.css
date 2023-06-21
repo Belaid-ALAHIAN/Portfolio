@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@100;200;300;400;500;700&family=Orbitron:wght@400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+  .app-container {
+    @apply;
+  }
+  .container {
+    @apply mx-auto px-4;
+  }
+  .centerapp {
+    @apply items-center !important;
+  }
+}
