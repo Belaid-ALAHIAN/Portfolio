@@ -16,4 +16,38 @@
   .centerapp {
     @apply items-center !important;
   }
+  #body {
+    opacity: 0;
+    animation: appear 2s ease-out 3s forwards;
+  }
+
+  #light,
+  #shadow,
+  #ground,
+  #cup {
+    opacity: 0;
+    animation: lightup 1s ease-out 2s forwards;
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    25% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes lightup {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
