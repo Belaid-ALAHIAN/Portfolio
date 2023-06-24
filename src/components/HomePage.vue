@@ -18,15 +18,17 @@ import HeroSvg from './HeroSvg.vue'
             with a focus on user-friendly interfaces and clean code.
           </p>
         </div>
-        <div class="h-3/4">
+        <div class="h-full pb-3">
           <HeroSvg />
         </div>
         <div class="flex-cols gap-4 absolute bottom-0 px-1">
-          <GithubIcon />
+          <a href="http://"><GithubIcon /></a>
+
           <div class="flex justify-center p-1">
             <div class="h-3 w-px bg-amber-500"></div>
           </div>
-          <InIcon />
+          <a href="http://"><InIcon /></a>
+
           <div class="flex justify-center">
             <div class="h-20 w-px bg-amber-500"></div>
           </div>
