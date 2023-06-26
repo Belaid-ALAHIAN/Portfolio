@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         Audiowide: ['Audiowide', 'cursive'],
         Montserrat: ['Montserrat', 'sans-serif']
+      },
+      boxShadow: {
+        formShadow: '0px 0px 5px 1px #080808;'
       }
     }
   },
