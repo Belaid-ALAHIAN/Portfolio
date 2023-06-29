@@ -4,7 +4,9 @@ import InIcon from '@/components/icons/InIcon.vue'
 import HeroSvg from './HeroSvg.vue'
 </script>
 <template>
-  <div class="container flex-col items-center my-auto md:flex md:flex-row gap-28 relative h-full">
+  <div
+    class="container flex-col py-8 items-center my-auto md:flex md:flex-row md:py-0 gap-28 relative h-full"
+  >
     <div class="md:my-auto p-2">
       <h1 class="font-Audiowide font-semibold text-5xl text-white uppercase">
         I'm <span class="text-amber-500">belaid</span> Alahian
