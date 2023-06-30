@@ -7,8 +7,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div>
-    <div class="w-full h-14 top-0 md:w-16 md:h-screen fixed bg-neutral-900 z-10">
-      <ul class="hidden h-full px-4 w-full md:flex flex-col justify-center gap-2">
+    <div class="w-full h-14 top-0 sm:w-16 sm:h-screen fixed bg-neutral-900 z-10">
+      <ul class="hidden h-full px-4 w-full sm:flex flex-col justify-center gap-2">
         <li>
           <router-link to="/"
             ><HomeIcon class="stroke-white cursor-pointer hover:stroke-amber-500" />
@@ -25,7 +25,7 @@ import { RouterLink, RouterView } from 'vue-router'
           /></router-link>
         </li>
       </ul>
-      <ul class="h-full w-full py-2 flex justify-center gap-2 md:hidden">
+      <ul class="h-full w-full py-2 flex justify-center gap-2 sm:hidden">
         <li>
           <router-link to="/"
             ><HomeIcon class="stroke-white cursor-pointer hover:stroke-amber-500" />
@@ -43,7 +43,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </li>
       </ul>
     </div>
-    <section class="mt-14 md-0 md:h-screen bg-neutral-800 md:ml-16">
+    <section class="mt-14 sm:mt-0 sm:h-screen bg-neutral-800 sm:ml-16">
       <router-view></router-view>
     </section>
   </div>

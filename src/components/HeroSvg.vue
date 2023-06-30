@@ -16,7 +16,12 @@ onMounted(() => {
 })
 </script>
 <template>
-  <svg class="w-full h-full" viewBox="0 0 619 1089" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    class="h-80 mx-auto sm:mx-0 sm:w-full sm:h-full"
+    viewBox="0 0 619 1089"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <g id="Frame 2">
       <g id="XMLID_1207_">
         <g id="ground">
