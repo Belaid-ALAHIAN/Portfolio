@@ -1,3 +1,6 @@
+<script setup>
+import MapLocation from '@/components/MapLocation.vue'
+</script>
 <template>
   <div class="container px-6 mx-auto">
     <div
@@ -15,7 +18,7 @@
           </p>
         </div>
         <div class="border border-amber-500 h-[62.5%] md:flex">
-          <div class="w-full h-full"></div>
+          <div class="w-full h-full"><MapLocation /></div>
           <div class="h-full p-6 flex flex-col justify-center">
             <div>
               <h3 class="text-center text-white text-lg uppercase w-full">Address</h3>
