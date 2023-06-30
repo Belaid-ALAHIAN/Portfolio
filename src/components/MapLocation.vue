@@ -6,7 +6,7 @@ const zoom = 10
 </script>
 
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-[262px]">
     <l-map ref="map" v-model:zoom="zoom" :center="[33.8995749, -5.5205297, 18]">
       <l-tile-layer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

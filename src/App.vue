@@ -43,7 +43,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </li>
       </ul>
     </div>
-    <section class="mt-14 sm:mt-0 sm:h-screen bg-neutral-800 sm:ml-16">
+    <section class="mt-14 sm:mt-0 bg-neutral-800 sm:ml-16 flex justify-center">
       <router-view></router-view>
     </section>
   </div>
