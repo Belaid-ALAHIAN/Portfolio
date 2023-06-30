@@ -5,18 +5,18 @@ import HeroSvg from './HeroSvg.vue'
 </script>
 <template>
   <div
-    class="container flex-col py-8 items-center my-auto md:flex md:flex-row md:py-0 gap-28 relative h-full"
+    class="container flex-col py-8 items-center my-auto sm:flex sm:flex-row sm:py-0 gap-28 relative h-screen"
   >
-    <div class="md:my-auto p-2">
+    <div class="sm:my-auto p-2">
       <h1 class="font-Audiowide font-semibold text-5xl text-white uppercase">
         I'm <span class="text-amber-500">belaid</span> Alahian
       </h1>
-      <p class="font-Montserrat font-extralight text-white p-1">
+      <p class="font-Montserrat font-extralight text-white p-1 text-left">
         Frontend developer creating engaging web experiences,<br />
         with a focus on user-friendly interfaces and clean code.
       </p>
     </div>
-    <div class="h-1/2 order-1 md:order-2 md:h-full pb-3">
+    <div class="h-1/2 order-1 sm:order-2 sm:h-full pb-3">
       <HeroSvg />
     </div>
     <div class="flex-cols gap-4 absolute bottom-0 px-1">
