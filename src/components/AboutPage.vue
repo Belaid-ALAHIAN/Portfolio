@@ -2,11 +2,13 @@
 import MapLocation from '@/components/MapLocation.vue'
 </script>
 <template>
-  <div class="h-full sm:min-h-screen px-3 py-3 sm:px-6 mx-auto items-center">
-    <div class="">
-      <div class="flex flex-col text-center md:text-left md:flex-row py-2 md:py-0">
+  <div>
+    <div class="h-full sm:min-h-screen px-3 py-3 sm:px-6 mx-auto md:flex md:items-center">
+      <div class="flex flex-col text-center md:text-left md:flex-row md:items-center py-2 md:py-0">
         <div class="flex flex-col w-full h-full p-2 sm:p-3 sm:pl-0">
-          <h1 class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl text-amber-500">
+          <h1
+            class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-amber-500"
+          >
             Get in touch
           </h1>
           <div class="p-2 pt-4">
