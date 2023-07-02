@@ -27,7 +27,7 @@ import HeroSvg from './HeroSvg.vue'
       </div>
       <a href="http://"><InIcon /></a>
 
-      <div class="flex justify-center">
+      <div class="flex justify-center p-1">
         <div class="h-20 w-px bg-amber-500"></div>
       </div>
     </div>
