@@ -3,7 +3,7 @@ import MapLocation from '@/components/MapLocation.vue'
 </script>
 <template>
   <div>
-    <div class="h-full sm:min-h-screen px-3 py-3 sm:px-6 mx-auto md:flex md:items-center">
+    <div class="h-full sm:min-h-screen px-3 py-3 sm:px-6 md:px-20 mx-auto md:flex md:items-center">
       <div class="flex flex-col text-center md:text-left md:flex-row md:items-center py-2 md:py-0">
         <div class="flex flex-col w-full h-full p-2 sm:p-3 sm:pl-0">
           <h1
@@ -25,7 +25,7 @@ import MapLocation from '@/components/MapLocation.vue'
             </div>
           </div>
         </div>
-        <div class="w-full md:w-full lg:w-9/12 mx-auto md:mx-0">
+        <div class="w-full md:basis-1/4 lg:w-9/12 mx-auto md:mx-0">
           <div class="p-2 md:p-10 flex flex-col w-full shadow-formShadow rounded-sm">
             <div action="" class="w-full">
               <div class="h-1/2 sm:h-full p-6 flex flex-col justify-center">
