@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="h-screen">
+  <div class="h-screen bg-neutral-800">
     <div class="w-full h-14 top-0 sm:w-16 sm:h-screen fixed bg-neutral-900 z-10">
       <ul class="hidden h-full px-4 w-full sm:flex flex-col justify-center gap-2">
         <li>
