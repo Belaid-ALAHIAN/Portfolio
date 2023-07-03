@@ -70,6 +70,12 @@
       transform: scale(1.2) translateY(-60px);
     }
   }
+  .flicking-arrow-prev {
+    @apply top-[90%] !important;
+  }
+  .flicking-arrow-next {
+    @apply top-[90%] !important;
+  }
   .flicking-arrow-prev::after {
     @apply bg-white border border-neutral-900 !important;
   }

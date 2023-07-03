@@ -22,7 +22,14 @@ const flicking = ref()
       <div
         class="flex flex-col gap-4 h-full items-center justify-center text-center md:text-left md:flex-row md:gap-4 py-2 md:py-0"
       >
-        <div class="h-96 w-full shadow-formShadow rounded-sm">
+        <div
+          v-motion
+          :initial="{ opacity: 0, x: -50 }"
+          :enter="{ opacity: 1, x: 0, scale: 1 }"
+          :hovered="{ scale: 1.2, zIndex: 50 }"
+          :delay="500"
+          class="h-96 w-full shadow-formShadow rounded-sm bg-neutral-900"
+        >
           <div class="h-1/2">
             <img class="h-full w-full" src="@/assets/images/moradio.png" alt="moradio" />
           </div>
@@ -41,7 +48,14 @@ const flicking = ref()
           </div>
         </div>
 
-        <div class="shadow-formShadow h-96 rounded-sm flex flex-col justify-between">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 50 }"
+          :enter="{ opacity: 1, y: 0, scale: 1 }"
+          :hovered="{ scale: 1.2, zIndex: 50 }"
+          :delay="500"
+          class="shadow-formShadow h-96 rounded-sm flex flex-col justify-between bg-neutral-900"
+        >
           <div class="overflow-hidden aspect-square">
             <Flicking
               ref="flicking"
@@ -94,7 +108,14 @@ const flicking = ref()
           </div>
         </div>
 
-        <div class="shadow-formShadow h-96 rounded-sm flex flex-col justify-between">
+        <div
+          v-motion
+          :initial="{ opacity: 0, x: 50 }"
+          :enter="{ opacity: 1, x: 0, scale: 1 }"
+          :hovered="{ scale: 1.2, zIndex: 50 }"
+          :delay="500"
+          class="shadow-formShadow h-96 rounded-sm flex flex-col justify-between bg-neutral-900"
+        >
           <div class="overflow-hidden aspect-square">
             <Flicking
               ref="flicking"
@@ -131,8 +152,8 @@ const flicking = ref()
               </div>
 
               <template #viewport>
-                <span class="flicking-arrow-prev top-3/4"></span>
-                <span class="flicking-arrow-next top-3/4"></span>
+                <span class="flicking-arrow-prev"></span>
+                <span class="flicking-arrow-next"></span>
               </template>
             </Flicking>
           </div>
