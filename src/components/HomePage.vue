@@ -26,12 +26,12 @@ import HeroSvg from './HeroSvg.vue'
       <HeroSvg />
     </div>
     <div class="flex-cols gap-4 absolute bottom-0 px-1">
-      <a href="http://"><GithubIcon /></a>
+      <a href="https://github.com/Belaid-ALAHIAN"><GithubIcon /></a>
 
       <div class="flex justify-center p-1">
         <div class="h-3 w-px bg-amber-500"></div>
       </div>
-      <a href="http://"><InIcon /></a>
+      <a href="https://www.linkedin.com/in/belaid-alahian/"><InIcon /></a>
 
       <div class="flex justify-center p-1">
         <div class="h-20 w-px bg-amber-500"></div>
