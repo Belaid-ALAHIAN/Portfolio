@@ -70,4 +70,16 @@
       transform: scale(1.2) translateY(-60px);
     }
   }
+  .flicking-arrow-prev::after {
+    @apply bg-white border border-neutral-900 !important;
+  }
+  .flicking-arrow-prev::before {
+    @apply bg-white border border-neutral-900 !important;
+  }
+  .flicking-arrow-next::before {
+    @apply bg-white border border-neutral-900 !important;
+  }
+  .flicking-arrow-next::after {
+    @apply bg-white border border-neutral-900 !important;
+  }
 }

@@ -7,7 +7,7 @@ import MapLocation from '@/components/MapLocation.vue'
       <div class="flex flex-col text-center md:text-left md:flex-row md:items-center py-2 md:py-0">
         <div class="flex flex-col w-full h-full p-2 sm:p-3 sm:pl-0">
           <h1
-            class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-amber-500"
+            class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-white"
           >
             Get in touch
           </h1>
