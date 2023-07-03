@@ -5,9 +5,15 @@ import MapLocation from '@/components/MapLocation.vue'
   <div>
     <div class="h-full sm:min-h-screen px-3 py-3 sm:px-6 md:px-20 mx-auto md:flex md:items-center">
       <div class="flex flex-col text-center md:text-left md:flex-row md:items-center py-2 md:py-0">
-        <div class="flex flex-col w-full h-full p-2 sm:p-3 sm:pl-0">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: -100 }"
+          :enter="{ opacity: 1, y: 0, scale: 1 }"
+          :delay="500"
+          class="flex flex-col w-full h-full p-2 sm:p-3 sm:pl-0"
+        >
           <h1
-            class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-amber-500"
+            class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-white"
           >
             Get in touch
           </h1>
@@ -26,7 +32,14 @@ import MapLocation from '@/components/MapLocation.vue'
           </div>
         </div>
         <div class="w-full md:basis-1/4 lg:w-9/12 mx-auto md:mx-0">
-          <div class="p-2 md:p-10 flex flex-col w-full shadow-formShadow rounded-sm">
+          <div
+            v-motion
+            :initial="{ opacity: 0, y: 100 }"
+            :enter="{ opacity: 1, y: 0, scale: 1 }"
+            :hovered="{ scale: 1.2 }"
+            :delay="500"
+            class="p-2 md:p-10 flex flex-col w-full shadow-formShadow rounded-sm"
+          >
             <div action="" class="w-full">
               <div class="h-1/2 sm:h-full p-6 flex flex-col justify-center">
                 <div>

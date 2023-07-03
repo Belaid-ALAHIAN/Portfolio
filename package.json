@@ -10,6 +10,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@egjs/flicking-plugins": "^4.7.0",
+    "@egjs/vue3-flicking": "^4.10.8",
     "@vueuse/motion": "^2.0.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"

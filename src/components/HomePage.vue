@@ -7,7 +7,13 @@ import HeroSvg from './HeroSvg.vue'
   <div
     class="container flex-col py-8 items-center my-auto sm:flex sm:flex-row sm:py-0 gap-28 relative h-screen"
   >
-    <div class="sm:my-auto p-2">
+    <div
+      v-motion
+      :initial="{ opacity: 0 }"
+      :enter="{ opacity: 1 }"
+      :delay="1000"
+      class="sm:my-auto p-2"
+    >
       <h1 class="font-Audiowide font-semibold text-5xl text-white uppercase">
         I'm <span class="text-amber-500">belaid</span> Alahian
       </h1>
