@@ -11,18 +11,22 @@ import { RouterLink, RouterView } from 'vue-router'
       <ul class="hidden h-full px-4 w-full sm:flex flex-col justify-center gap-2">
         <li>
           <router-link to="/"
-            ><HomeIcon class="stroke-white cursor-pointer hover:stroke-amber-500" />
+            ><HomeIcon class="stroke-white cursor-pointer hover:stroke-amber-500" />Home
           </router-link>
         </li>
         <li>
           <router-link to="/about"
-            ><AboutIcon class="stroke-white cursor-pointer hover:stroke-amber-500"
-          /></router-link>
+            ><AboutIcon
+              class="stroke-white cursor-pointer hover:stroke-amber-500"
+            />About</router-link
+          >
         </li>
         <li>
           <router-link to="/work"
-            ><CodeIcon class="stroke-white cursor-pointer hover:stroke-amber-500"
-          /></router-link>
+            ><CodeIcon
+              class="stroke-white cursor-pointer hover:stroke-amber-500"
+            />Work</router-link
+          >
         </li>
       </ul>
       <ul class="h-full w-full py-2 flex justify-center gap-2 sm:hidden">
