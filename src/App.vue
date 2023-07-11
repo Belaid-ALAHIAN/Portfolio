@@ -1,54 +1,40 @@
 <script setup>
-import HomeIcon from '@/components/icons/HomeIcon.vue'
-import AboutIcon from '@/components/icons/AboutIcon.vue'
-import CodeIcon from '@/components/icons/CodeIcon.vue'
+import HomePage from '@/components/HomePage.vue'
+import AboutPage from '@/components/AboutPage.vue'
+import WorkPage from '@/components/WorkPage.vue'
+import EnvelopeIcon from '@/components/icons/EnvelopeIcon.vue'
+
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="h-screen bg-neutral-800">
-    <div class="w-full h-14 top-0 sm:w-16 sm:h-screen fixed bg-neutral-900 z-10">
-      <ul class="hidden h-full px-4 w-full sm:flex flex-col justify-center gap-2">
-        <li>
-          <router-link to="/"
-            ><HomeIcon class="stroke-white cursor-pointer hover:stroke-amber-500" />Home
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/about"
-            ><AboutIcon
-              class="stroke-white cursor-pointer hover:stroke-amber-500"
-            />About</router-link
-          >
-        </li>
-        <li>
-          <router-link to="/work"
-            ><CodeIcon
-              class="stroke-white cursor-pointer hover:stroke-amber-500"
-            />Work</router-link
-          >
-        </li>
-      </ul>
-      <ul class="h-full w-full py-2 flex justify-center gap-2 sm:hidden">
-        <li>
-          <router-link to="/"
-            ><HomeIcon class="stroke-white cursor-pointer hover:stroke-amber-500" />
-          </router-link>
-        </li>
-        <li>
-          <router-link to="/about"
-            ><AboutIcon class="stroke-white cursor-pointer hover:stroke-amber-500"
-          /></router-link>
-        </li>
-        <li>
-          <router-link to="/work"
-            ><CodeIcon class="stroke-white cursor-pointer hover:stroke-amber-500"
-          /></router-link>
-        </li>
-      </ul>
+  <div class="app-container bg-neutral-800">
+    <div class="w-full h-14 bg-neutral-800">
+      <nav class="w-full flex items-center justify-between py-3">
+        <ul class="flex justify-evenly text-amber-500 w-1/3">
+          <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
+            <a href="/">Home </a>
+          </li>
+          <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
+            <a href="/about">About</a>
+          </li>
+          <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
+            <a href="/work">Work</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="inline-flex items-center rounded-full border border-transparent bg-amber-500 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2"
+        >
+          <EnvelopeIcon class="-ml-0.5 mr-2 h-4 w-4" aria-hidden="true" />
+          Contact Me
+        </button>
+      </nav>
     </div>
-    <section class="mt-14 sm:mt-0 bg-neutral-800 sm:ml-16 flex justify-center">
-      <router-view></router-view>
+    <section class="bg-neutral-800">
+      <HomePage />
+      <AboutPage />
+      <WorkPage />
     </section>
   </div>
 </template>
