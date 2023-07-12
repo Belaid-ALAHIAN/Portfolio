@@ -8,9 +8,9 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="app-container bg-neutral-800">
-    <div class="w-full h-14 bg-neutral-800">
-      <nav class="w-full flex items-center justify-between py-3">
+  <div class="h-screen">
+    <div class="w-full bg-neutral-800 border-b border-gray-801">
+      <nav class="app-container w-full flex items-center justify-between py-2">
         <ul class="flex justify-evenly text-amber-500 w-1/3">
           <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
             <a href="/">Home </a>
@@ -31,10 +31,12 @@ import { RouterLink, RouterView } from 'vue-router'
         </button>
       </nav>
     </div>
-    <section class="bg-neutral-800">
-      <HomePage />
-      <AboutPage />
-      <WorkPage />
-    </section>
+    <div class="app-container bg-neutral-800">
+      <section class="bg-neutral-800">
+        <HomePage />
+        <AboutPage />
+        <WorkPage />
+      </section>
+    </div>
   </div>
 </template>

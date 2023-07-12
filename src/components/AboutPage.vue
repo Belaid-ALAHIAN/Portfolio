@@ -3,26 +3,26 @@ import MapLocation from '@/components/MapLocation.vue'
 </script>
 <template>
   <div>
-    <div class="h-full sm:min-h-screen px-3 py-3 sm:px-6 md:px-20 mx-auto md:flex md:items-center">
-      <div class="flex flex-col text-center md:text-left md:flex-row md:items-center py-2 md:py-0">
+    <div class="h-full px-20 mx-auto flex items-center sm:min-h-screen py-3 sm:px-6">
+      <div class="items-center py-0">
         <div
           v-motion
           :initial="{ opacity: 0, y: -100 }"
           :enter="{ opacity: 1, y: 0, scale: 1 }"
           :delay="500"
-          class="flex flex-col w-full h-full p-2 sm:p-3 sm:pl-0"
+          class="w-full h-full p-2 sm:p-3 sm:pl-0"
         >
-          <h1
-            class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-white"
-          >
-            Get in touch
-          </h1>
-          <div class="p-2 pt-4">
-            <p class="text-gray-300 text-justify font-Montserrat px-3">
-              Don't hesitate to get in touch if you're interested in connecting, collaborating, or
-              speaking opportunities. Feel free to reach out to share your ideas, discuss your
-              requirements, or even just to say hi. Initiate a conversation and let's explore the
-              exciting prospects of working together.
+          <div class="px-8 py-4">
+            <h1
+              class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-white"
+            >
+              Get in touch
+            </h1>
+
+            <p class="text-gray-300 text-justify w-1/2 font-Montserrat p-3">
+              Reach out for networking, collaboration, or speaking opportunities. Share ideas,
+              provide feedback, or just say hello. Let's connect and explore the possibilities
+              together.
             </p>
           </div>
           <div class="border border-amber-500 h-full sm:h-[62.5%] lg:flex">
