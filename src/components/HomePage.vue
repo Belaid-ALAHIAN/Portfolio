@@ -1,6 +1,4 @@
 <script setup>
-import GithubIcon from '@/components/icons/GithubIcon.vue'
-import InIcon from '@/components/icons/InIcon.vue'
 import HeroSvg from './HeroSvg.vue'
 </script>
 <template>
@@ -24,7 +22,7 @@ import HeroSvg from './HeroSvg.vue'
     </div>
 
     <div
-      class="h-[150px] flex flex-col justify-around py-3 w-[30%] absolute bottom-0 left-[10%] bg-gray-801 rounded-tl-3xl rounded-tr-3xl"
+      class="h-[150px] flex flex-col justify-around py-3 w-80 absolute bottom-0 left-[10%] bg-gray-801 rounded-tl-3xl rounded-tr-3xl shadow-formShadow"
     >
       <h1 class="text-center text-white uppercase">Stack</h1>
       <div class="flex justify-around">
@@ -64,18 +62,6 @@ import HeroSvg from './HeroSvg.vue'
     </div>
     <div class="h-full w-full">
       <HeroSvg class="h-full w-full" />
-    </div>
-    <div class="flex-cols gap-4 absolute bottom-0 px-1">
-      <a href="https://github.com/Belaid-ALAHIAN"><GithubIcon /></a>
-
-      <div class="flex justify-center p-1">
-        <div class="h-3 w-px bg-amber-500"></div>
-      </div>
-      <a href="https://www.linkedin.com/in/belaid-alahian/"><InIcon /></a>
-
-      <div class="flex justify-center p-1">
-        <div class="h-20 w-px bg-amber-500"></div>
-      </div>
     </div>
   </div>
 </template>

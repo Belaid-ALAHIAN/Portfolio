@@ -3,7 +3,8 @@ import HomePage from '@/components/HomePage.vue'
 import AboutPage from '@/components/AboutPage.vue'
 import WorkPage from '@/components/WorkPage.vue'
 import EnvelopeIcon from '@/components/icons/EnvelopeIcon.vue'
-
+import GithubIcon from '@/components/icons/GithubIcon.vue'
+import InIcon from '@/components/icons/InIcon.vue'
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
@@ -31,12 +32,24 @@ import { RouterLink, RouterView } from 'vue-router'
         </button>
       </nav>
     </div>
-    <div class="app-container bg-neutral-800">
+    <div class="app-container bg-neutral-800 relative">
       <section class="bg-neutral-800">
         <HomePage />
         <AboutPage />
         <WorkPage />
       </section>
+    </div>
+    <div class="flex-cols gap-4 fixed bottom-0 left-20 z-50 px-1">
+      <a href="https://github.com/Belaid-ALAHIAN"><GithubIcon /></a>
+
+      <div class="flex justify-center p-1">
+        <div class="h-3 w-px bg-amber-500"></div>
+      </div>
+      <a href="https://www.linkedin.com/in/belaid-alahian/"><InIcon /></a>
+
+      <div class="flex justify-center p-1">
+        <div class="h-20 w-px bg-amber-500"></div>
+      </div>
     </div>
   </div>
 </template>

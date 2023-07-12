@@ -10,7 +10,7 @@ const plugins = [[new Pagination({ type: 'scroll' })], [new Arrow()]]
 const flicking = ref()
 </script>
 <template>
-  <div class="">
+  <div class="mt-10">
     <div
       class="h-full flex flex-col items-center justify-center gap-2 sm:min-h-screen px-3 py-10 sm:px-6 lg:px-20 mx-auto"
     >
