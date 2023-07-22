@@ -35,7 +35,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="app-container bg-neutral-800 relative">
       <section class="bg-neutral-800">
         <HomePage />
-        <AboutPage />
+        <AboutPage class="pb-8" />
         <WorkPage />
       </section>
     </div>

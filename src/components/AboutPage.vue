@@ -6,7 +6,7 @@ import github from './icons/github.vue'
 </script>
 <template>
   <div>
-    <div class="h-full px-3 items-center sm:min-h-screen py-3 sm:px-6">
+    <div class="h-full px-3 items-center sm:min-h-screen py-3 pb-8 sm:px-6">
       <div class="items-center px-20 mx-auto pb-5">
         <div
           v-motion

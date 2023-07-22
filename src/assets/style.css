@@ -88,4 +88,7 @@
   .flicking-arrow-next::after {
     @apply bg-white border border-neutral-900 !important;
   }
+  .projectImage {
+    object-fit: cover;
+  }
 }
