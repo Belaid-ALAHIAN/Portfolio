@@ -6,7 +6,7 @@ const zoom = 10
 </script>
 
 <template>
-  <div class="w-full h-[262px]">
+  <div class="w-full h-[262px] rounded-3xl map">
     <l-map ref="map" v-model:zoom="zoom" :center="[33.8995749, -5.5205297, 18]">
       <l-tile-layer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

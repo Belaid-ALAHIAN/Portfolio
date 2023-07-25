@@ -10,17 +10,16 @@ const plugins = [[new Pagination({ type: 'scroll' })], [new Arrow()]]
 const flicking = ref()
 </script>
 <template>
-  <div class="h-full py-10 px-3">
+  <div class="h-full py-10 px-3 pt-20">
     <h1
       class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl text-right text-white"
     >
       Noteworthy Projects I've Been Involved In
     </h1>
-    <div class="flex items-center pt-10 gap-1 h-full text-center md:text-left md: py-2 md:py-0">
+    <div
+      class="flex items-center pt-10 gap-1 h-full text-center md:flex-col md:text-left md: py-2 md:py-0"
+    >
       <div class="p-1 w-full grid grid-rows gap-4">
-        <p class="p-1 h-auto text-center font-Montserrat font-light text-white">
-          Moroccan radio stations.
-        </p>
         <div class="relative h-full rounded-3xl flex flex-col">
           <div class="relative holder">
             <img
@@ -28,12 +27,17 @@ const flicking = ref()
               src="@/assets/images/moradio.png"
               alt="moradio"
             />
+            <p
+              class="absolute left-2 bottom-2 p-1 h-auto text-center font-Montserrat font-light text-white bg-neutral-900 bg-opacity-80 rounded-3xl"
+            >
+              Moroccan radio stations.
+            </p>
           </div>
-          <div class="w-full flex justify-between items-center gap-8 p-2">
+          <div class="w-full flex justify-end items-center gap-8 p-2">
             <a
               href="https://moradios.netlify.app/"
               target="_blank"
-              class="py-2 w-full px-2 bg-slate-50 text-neutral-900 hover:bg-amber-500 hover:text-white text-center cursor-pointer shadow-formShadow rounded-full"
+              class="py-2 w-1/2 px-2 bg-slate-50 text-neutral-900 hover:bg-amber-500 hover:text-white text-center cursor-pointer shadow-formShadow rounded-full"
             >
               website</a
             >
@@ -42,9 +46,6 @@ const flicking = ref()
       </div>
 
       <div class="p-1 w-full grid grid-rows gap-4">
-        <p class="p-1 h-auto text-center font-Montserrat font-light text-white">
-          A platform for driver license exams.
-        </p>
         <div class="relative h-full rounded-3xl flex flex-col">
           <div class="relative holder">
             <img
@@ -52,10 +53,15 @@ const flicking = ref()
               src="@/assets/images/cod401.png"
               alt="moradio"
             />
-          </div>
-          <div class="w-full flex justify-between items-center gap-8 p-2">
             <p
-              class="py-2 w-full px-2 bg-gray-400 text-neutral-900 text-center cursor-not-allowed shadow-formShadow rounded-full"
+              class="absolute left-2 bottom-2 p-1 h-auto text-center font-Montserrat font-light text-white bg-neutral-900 bg-opacity-80 rounded-3xl"
+            >
+              A platform for driver license exams.
+            </p>
+          </div>
+          <div class="w-full flex justify-end items-center gap-8 p-2">
+            <p
+              class="py-2 w-1/2 px-2 bg-gray-300 text-neutral-900 text-center cursor-not-allowed shadow-formShadow rounded-full"
             >
               website
             </p>
@@ -64,9 +70,6 @@ const flicking = ref()
       </div>
 
       <div class="p-1 w-full grid grid-rows gap-4">
-        <p class="p-1 h-auto text-center font-Montserrat font-light text-white">
-          A website for a digital agency .
-        </p>
         <div class="relative h-full rounded-3xl flex flex-col">
           <div class="relative holder">
             <img
@@ -74,10 +77,15 @@ const flicking = ref()
               src="@/assets/images/ader1.png"
               alt="moradio"
             />
-          </div>
-          <div class="w-full flex justify-between items-center gap-8 p-2">
             <p
-              class="py-2 w-full px-2 bg-gray-400 text-neutral-900 text-center cursor-not-allowed shadow-formShadow rounded-full"
+              class="absolute left-2 bottom-2 p-1 h-auto text-center font-Montserrat font-light text-white bg-neutral-900 bg-opacity-80 rounded-3xl"
+            >
+              A website for a digital agency .
+            </p>
+          </div>
+          <div class="w-full flex justify-end items-center gap-8 p-2">
+            <p
+              class="py-2 w-1/2 px-2 bg-gray-300 text-neutral-900 text-center cursor-not-allowed shadow-formShadow rounded-full"
             >
               website
             </p>

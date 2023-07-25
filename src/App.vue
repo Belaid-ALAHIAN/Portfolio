@@ -42,7 +42,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>
       </section>
     </div>
-    <div class="flex-cols gap-4 fixed bottom-0 left-20 z-50 px-1">
+    <div class="flex-cols gap-4 fixed bottom-0 left-20 md:left-8 sm:left-2 z-50 px-1">
       <a href="https://github.com/Belaid-ALAHIAN"><GithubIcon /></a>
 
       <div class="flex justify-center p-1">

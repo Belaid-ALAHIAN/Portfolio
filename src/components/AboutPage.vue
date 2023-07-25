@@ -30,7 +30,7 @@ import github from './icons/github.vue'
           </div>
         </div>
       </div>
-      <div class="border border-amber-500 h-full sm:h-[62.5%]">
+      <div class="border border-amber-500 rounded-3xl h-full sm:h-[62.5%]">
         <div class="h-1/2 w-full sm:w-full sm:h-full relative">
           <MapLocation class="h-[100%] z-0" />
           <div
