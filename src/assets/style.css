@@ -91,4 +91,10 @@
   .projectImage {
     object-fit: cover;
   }
+  .holder::after {
+    display: block;
+    content: '';
+    /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+  }
 }

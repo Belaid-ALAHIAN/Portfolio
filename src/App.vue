@@ -37,6 +37,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <HomePage />
         <AboutPage class="pb-8" />
         <WorkPage />
+        <div class="h-12 border-t border-gray-801 py-3">
+          <p class="text-center text-amber-500">resume</p>
+        </div>
       </section>
     </div>
     <div class="flex-cols gap-4 fixed bottom-0 left-20 z-50 px-1">
