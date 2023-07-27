@@ -98,6 +98,6 @@
     padding-bottom: 56.25%;
   }
   .map div {
-    @apply rounded-3xl;
+    @apply rounded-3xl sm:rounded-none;
   }
 }

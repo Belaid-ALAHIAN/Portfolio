@@ -30,11 +30,11 @@ import github from './icons/github.vue'
           </div>
         </div>
       </div>
-      <div class="border border-amber-500 rounded-3xl h-full sm:h-[62.5%]">
+      <div class="border border-amber-500 rounded-3xl h-full sm:rounded-t-none sm:h-[62.5%]">
         <div class="h-1/2 w-full sm:w-full sm:h-full relative">
           <MapLocation class="h-[100%] z-0" />
           <div
-            class="p-2 md:p-10 flex flex-col w-80 absolute -top-8 left-[9%] z-[9999] bg-gray-801 shadow-formShadow rounded-bl-3xl rounded-br-3xl"
+            class="p-2 flex flex-col w-80 absolute sm:relative sm:top-0 sm:left-0 sm:w-full sm:p-1 -top-8 left-[9%] z-[9999] bg-gray-801 shadow-formShadow rounded-bl-3xl rounded-br-3xl"
           >
             <div class="w-full">
               <div class="h-full sm:h-full px-6 py-3 flex flex-col justify-center">
