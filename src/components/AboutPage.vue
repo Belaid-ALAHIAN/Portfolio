@@ -7,7 +7,7 @@ import github from './icons/github.vue'
 <template>
   <div>
     <div class="h-full px-3 items-center sm:min-h-screen py-3 pb-8 sm:px-6">
-      <div class="items-center px-20 mx-auto pb-5">
+      <div class="items-center px-20 sm:px-2 mx-auto pb-5">
         <div
           v-motion
           :initial="{ opacity: 0, y: -100 }"
@@ -15,14 +15,14 @@ import github from './icons/github.vue'
           :delay="500"
           class="w-full h-full p-2 sm:p-3 sm:pl-0"
         >
-          <div class="px-8 py-4">
+          <div class="px-8 py-4 md:px-2">
             <h1
               class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-white"
             >
               Get in touch
             </h1>
 
-            <p class="text-gray-300 text-justify w-1/2 font-Montserrat p-3">
+            <p class="text-gray-300 text-justify w-1/2 font-Montserrat p-3 md:w-full">
               Reach out for networking, collaboration, or speaking opportunities. Share ideas,
               provide feedback, or just say hello. Let's connect and explore the possibilities
               together.

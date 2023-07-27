@@ -3,7 +3,7 @@ import HeroSvg from './HeroSvg.vue'
 </script>
 <template>
   <div
-    class="container items-center my-auto flex flex-row py-0 gap-28 relative h-[91vh] sm:flex-col sm:py-8"
+    class="container items-center my-auto flex flex-row py-0 gap-28 relative h-[91vh] sm:h-full sm:flex-col sm:py-8"
   >
     <div
       v-motion
@@ -22,7 +22,7 @@ import HeroSvg from './HeroSvg.vue'
     </div>
 
     <div
-      class="h-[150px] flex flex-col justify-around py-3 w-80 absolute bottom-0 left-[10%] bg-gray-801 rounded-tl-3xl rounded-tr-3xl shadow-formShadow"
+      class="h-[150px] flex flex-col justify-around py-3 w-80 absolute xsm:top-[35%] sm:top-[25%] sm:w-4/5 bottom-0 left-[10%] bg-gray-801 rounded-tl-3xl rounded-tr-3xl shadow-formShadow"
     >
       <h1 class="text-center text-white uppercase">Stack</h1>
       <div class="flex justify-around">
