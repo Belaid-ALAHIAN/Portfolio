@@ -99,5 +99,15 @@
   }
   .map div {
     @apply rounded-3xl sm:rounded-none;
+    z-index: 99;
+  }
+  .scrolled {
+    box-shadow: 0 0 10px #aaa;
+    background-color: #fff;
+    transition: ease-out 500ms;
+  }
+  .navshild {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }

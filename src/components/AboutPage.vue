@@ -8,13 +8,7 @@ import github from './icons/github.vue'
   <div>
     <div class="h-full px-3 items-center sm:min-h-screen py-3 pb-8 sm:px-6">
       <div class="items-center px-20 sm:px-2 mx-auto pb-5">
-        <div
-          v-motion
-          :initial="{ opacity: 0, y: -100 }"
-          :enter="{ opacity: 1, y: 0, scale: 1 }"
-          :delay="500"
-          class="w-full h-full p-2 sm:p-3 sm:pl-0"
-        >
+        <div class="w-full h-full p-2 sm:p-3 sm:pl-0">
           <div class="px-8 py-4 md:px-2">
             <h1
               class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-white"
@@ -34,7 +28,7 @@ import github from './icons/github.vue'
         <div class="h-1/2 w-full sm:w-full sm:h-full relative">
           <MapLocation class="h-[100%] z-0" />
           <div
-            class="p-2 flex flex-col w-80 absolute sm:relative sm:top-0 sm:left-0 sm:w-full sm:p-1 -top-8 left-[9%] z-[9999] bg-gray-801 shadow-formShadow rounded-bl-3xl rounded-br-3xl"
+            class="p-2 flex flex-col w-80 absolute sm:relative sm:top-0 sm:left-0 sm:w-full sm:p-1 -top-8 left-[9%] z-[100] bg-gray-801 shadow-formShadow rounded-bl-3xl rounded-br-3xl"
           >
             <div class="w-full">
               <div class="h-full sm:h-full px-6 py-3 flex flex-col justify-center">
