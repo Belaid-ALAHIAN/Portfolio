@@ -8,7 +8,7 @@
 
 @layer components {
   .app-container {
-    @apply;
+    @apply px-14 md:px-10 sm:px-2;
   }
   .container {
     @apply mx-auto px-4;
@@ -87,5 +87,27 @@
   }
   .flicking-arrow-next::after {
     @apply bg-white border border-neutral-900 !important;
+  }
+  .projectImage {
+    object-fit: cover;
+  }
+  .holder::after {
+    display: block;
+    content: '';
+    /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+  }
+  .map div {
+    @apply rounded-3xl sm:rounded-none;
+    z-index: 99;
+  }
+  .scrolled {
+    box-shadow: 0 0 10px #aaa;
+    background-color: #fff;
+    transition: ease-out 500ms;
+  }
+  .navshild {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
