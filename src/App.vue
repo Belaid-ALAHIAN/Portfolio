@@ -5,9 +5,18 @@ import WorkPage from '@/components/WorkPage.vue'
 import EnvelopeIcon from '@/components/icons/EnvelopeIcon.vue'
 import GithubIcon from '@/components/icons/GithubIcon.vue'
 import InIcon from '@/components/icons/InIcon.vue'
+import MenuIcon from '@/components/icons/MenuIcon.vue'
 import { RouterLink, RouterView } from 'vue-router'
 
 import { ref, onMounted } from 'vue'
+
+let navigation = ref(false)
+const showNavigation = function () {
+  navigation.value = true
+}
+const hideNavigation = function () {
+  navigation.value = false
+}
 
 const isMenuOpen = ref(false)
 const scrolling = function (pos) {
@@ -18,7 +27,7 @@ const nav = ref(null)
 onMounted(() => {
   window.addEventListener('scroll', () => {
     let curr = window.pageYOffset
-    console.log(curr)
+
     if (curr >= 40) {
       nav.value.classList.add('scrolled')
       //navShild.value.classList.add('navshild')
@@ -37,8 +46,8 @@ onMounted(() => {
         ref="nav"
         class="w-full px-0 bg-neutral-800 border-b border-gray-801 sticky top-0 z-[9999]"
       >
-        <nav class="app-container w-full flex items-center justify-between py-2">
-          <ul class="flex justify-evenly text-amber-500 w-1/3">
+        <nav class="app-container sm:pl-5 w-full flex items-center justify-between py-2">
+          <ul class="md:hidden flex justify-evenly text-amber-500 w-1/3">
             <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
               <a @click="scrolling(0)" href="#home">Home </a>
             </li>
@@ -49,6 +58,33 @@ onMounted(() => {
               <a @click="scrolling(1070)" href="#work">Work</a>
             </li>
           </ul>
+          <div
+            class="w-full h-full z-[9999] top-[58px] md:block md:fixed bg-slate-50 bg-opacity-50"
+            v-if="navigation"
+          >
+            <div
+              class="fixed bg-white-100 w-[96px] z-[9999] transition-all h-full bg-neutral-800"
+              :class="[navigation ? 'left-0' : '-left-240']"
+            >
+              <div class="px-5 border-b border-border-100 h-full">
+                <ul class="flex h-1/2 flex-col justify-evenly text-amber-500">
+                  <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
+                    <a @click="scrolling(0)" href="#home">Home </a>
+                  </li>
+                  <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
+                    <a @click="scrolling(632)" href="#about">About</a>
+                  </li>
+                  <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
+                    <a @click="scrolling(1070)" href="#work">Work</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div v-if="navigation" class="fixed inset-0 z-40" @click="hideNavigation" />
+          </div>
+          <div class="hidden md:block w-5 h-5 mr-4 cursor-pointer" @click="showNavigation">
+            <p class="w-full h-full text-white"><menu-icon class="w-full h-full" /></p>
+          </div>
           <button
             type="button"
             class="inline-flex items-center rounded-full border border-transparent bg-amber-500 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2"

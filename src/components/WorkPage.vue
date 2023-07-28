@@ -12,7 +12,7 @@ const flicking = ref()
 <template>
   <div class="h-full py-10 px-3 pt-20">
     <h1
-      class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl text-right text-white"
+      class="uppercase pb-4 ont-Audiowide font-semibold text-2xl xsm:text-base sm:text-lg md:text-4xl text-right text-white"
     >
       Noteworthy Projects I've Been Involved In
     </h1>

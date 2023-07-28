@@ -11,7 +11,7 @@ import github from './icons/github.vue'
         <div class="w-full h-full p-2 sm:p-3 sm:pl-0">
           <div class="px-8 py-4 md:px-2">
             <h1
-              class="uppercase ont-Audiowide font-semibold text-2xl sm:text-5xl md:text-4xl md:text-center text-white"
+              class="uppercase ont-Audiowide font-semibold text-2xl xsm:text-base md:text-4xl md:text-center text-white"
             >
               Get in touch
             </h1>
@@ -31,7 +31,7 @@ import github from './icons/github.vue'
             class="p-2 flex flex-col w-80 absolute sm:relative sm:top-0 sm:left-0 sm:w-full sm:p-1 -top-8 left-[9%] z-[100] bg-gray-801 shadow-formShadow rounded-bl-3xl rounded-br-3xl"
           >
             <div class="w-full">
-              <div class="h-full sm:h-full px-6 py-3 flex flex-col justify-center">
+              <div class="h-full sm:h-full sm:px-1 px-6 py-3 flex flex-col justify-center">
                 <div class="flex flex-col">
                   <div class="flex justify-center">
                     <div class="rounded-lg aspect-square">
