@@ -7,8 +7,12 @@ import GithubIcon from '@/components/icons/GithubIcon.vue'
 import InIcon from '@/components/icons/InIcon.vue'
 import MenuIcon from '@/components/icons/MenuIcon.vue'
 import { RouterLink, RouterView } from 'vue-router'
+import Loading from 'vue-loading-overlay'
 
 import { ref, onMounted } from 'vue'
+
+let isLoading = ref(true)
+const fullPage = ref(true)
 
 let navigation = ref(false)
 const showNavigation = function () {
@@ -25,6 +29,9 @@ const scrolling = function (pos) {
 const nav = ref(null)
 //const navShild = ref(null)
 onMounted(() => {
+  setTimeout(() => {
+    isLoading.value = false
+  }, 700)
   window.addEventListener('scroll', () => {
     let curr = window.pageYOffset
 
@@ -41,6 +48,14 @@ onMounted(() => {
 
 <template>
   <div class="h-screen">
+    <loading
+      v-model:active="isLoading"
+      :opacity="1"
+      :background-color="'#262626'"
+      :color="'#F59E0B'"
+      :z-index="99999"
+      :is-full-page="fullPage"
+    />
     <div class="bg-neutral-800">
       <div
         ref="nav"
@@ -96,6 +111,7 @@ onMounted(() => {
       </div>
       <div class="app-container bg-neutral-800 relative">
         <HomePage id="#home" />
+
         <AboutPage id="#about" class="pb-8" />
         <WorkPage id="#work" />
         <div class="h-12 border-t border-gray-801 py-3">
