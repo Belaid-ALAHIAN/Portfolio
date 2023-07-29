@@ -12,14 +12,20 @@ const flicking = ref()
 <template>
   <div class="h-full py-10 px-3 pt-20">
     <h1
-      class="uppercase pb-4 ont-Audiowide font-semibold text-2xl xsm:text-base sm:text-lg md:text-4xl text-right text-white"
+      class="uppercase pb-4 ont-Audiowide font-semibold text-2xl xsm:text-base sm:text-lg md:text-4xl text-center text-white"
     >
       Noteworthy Projects I've Been Involved In
     </h1>
     <div
       class="flex items-center pt-10 gap-1 h-full text-center md:flex-col md:text-left md: py-2 md:py-0"
     >
-      <div class="p-1 w-full grid grid-rows gap-4">
+      <div
+        v-motion
+        :initial="{ opacity: 0 }"
+        :visible="{ opacity: 1 }"
+        :delay="800"
+        class="p-1 w-full grid grid-rows gap-4"
+      >
         <div class="relative h-full rounded-3xl flex flex-col">
           <div class="relative holder">
             <img
@@ -45,7 +51,13 @@ const flicking = ref()
         </div>
       </div>
 
-      <div class="p-1 w-full grid grid-rows gap-4">
+      <div
+        v-motion
+        :initial="{ opacity: 0 }"
+        :visible="{ opacity: 1 }"
+        :delay="900"
+        class="p-1 w-full grid grid-rows gap-4"
+      >
         <div class="relative h-full rounded-3xl flex flex-col">
           <div class="relative holder">
             <img
@@ -69,7 +81,13 @@ const flicking = ref()
         </div>
       </div>
 
-      <div class="p-1 w-full grid grid-rows gap-4">
+      <div
+        v-motion
+        :initial="{ opacity: 0 }"
+        :visible="{ opacity: 1 }"
+        :delay="1000"
+        class="p-1 w-full grid grid-rows gap-4"
+      >
         <div class="relative h-full rounded-3xl flex flex-col">
           <div class="relative holder">
             <img

@@ -7,7 +7,13 @@ import github from './icons/github.vue'
 <template>
   <div>
     <div class="h-full px-3 items-center sm:min-h-screen py-3 pb-8 sm:px-6">
-      <div class="items-center px-20 sm:px-2 mx-auto pb-5">
+      <div
+        v-motion
+        :initial="{ opacity: 0 }"
+        :visible="{ opacity: 1 }"
+        :delay="1000"
+        class="items-center px-20 sm:px-2 mx-auto pb-5"
+      >
         <div class="w-full h-full p-2 sm:p-3 sm:pl-0">
           <div class="px-8 py-4 md:px-2">
             <h1
@@ -24,10 +30,14 @@ import github from './icons/github.vue'
           </div>
         </div>
       </div>
-      <div class="border border-amber-500 rounded-3xl h-full sm:rounded-t-none sm:h-[62.5%]">
+      <div class="rounded-3xl h-full sm:rounded-t-none sm:h-[62.5%]">
         <div class="h-1/2 w-full sm:w-full sm:h-full relative">
           <MapLocation class="h-[100%] z-0" />
           <div
+            v-motion
+            :initial="{ y: -175 }"
+            :visible="{ y: 0 }"
+            :delay="1000"
             class="p-2 flex flex-col w-80 absolute sm:relative sm:top-0 sm:left-0 sm:w-full sm:p-1 -top-8 left-[9%] z-[100] bg-gray-801 shadow-formShadow rounded-bl-3xl rounded-br-3xl"
           >
             <div class="w-full">
