@@ -22,7 +22,11 @@ import HeroSvg from './HeroSvg.vue'
     </div>
 
     <div
-      class="h-[150px] flex flex-col justify-around py-3 w-80 absolute xsm:top-[35%] sm:top-[25%] sm:w-4/5 bottom-0 left-[10%] bg-gray-801 rounded-tl-3xl rounded-tr-3xl shadow-formShadow"
+      v-motion
+      :initial="{ opacity: 0 }"
+      :enter="{ opacity: 1 }"
+      :delay="1500"
+      class="h-[150px] flex flex-col justify-around py-3 w-80 absolute xsm:top-[35%] sm:top-[25%] sm:w-4/5 bottom-0 left-[9.85%] bg-gray-801 rounded-tl-3xl rounded-tr-3xl shadow-formShadow"
     >
       <h1 class="text-center text-white uppercase">Stack</h1>
       <div class="flex justify-around">
