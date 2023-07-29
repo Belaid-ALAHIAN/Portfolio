@@ -1,6 +1,7 @@
 import './assets/style.css'
 import 'leaflet/dist/leaflet.css'
 import '@egjs/flicking-plugins/dist/flicking-plugins.css'
+import 'vue-loading-overlay/dist/css/index.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
