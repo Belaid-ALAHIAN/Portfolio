@@ -8,7 +8,9 @@ import InIcon from '@/components/icons/InIcon.vue'
 import MenuIcon from '@/components/icons/MenuIcon.vue'
 import { RouterLink, RouterView } from 'vue-router'
 import Loading from 'vue-loading-overlay'
-
+import HomeIcon from '@/components/icons/HomeIcon.vue'
+import AboutIcon from '@/components/icons/AboutIcon.vue'
+import CodeIcon from '@/components/icons/CodeIcon.vue'
 import { ref, onMounted } from 'vue'
 
 let isLoading = ref(true)
@@ -82,22 +84,22 @@ onMounted(() => {
               :class="[navigation ? 'left-0' : '-left-240']"
             >
               <div class="px-5 border-b border-border-100 h-full">
-                <ul class="flex h-1/2 flex-col justify-evenly text-amber-500">
-                  <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
-                    <a @click="scrolling(0)" href="#home">Home </a>
+                <ul class="flex h-1/2 flex-col justify-evenly items-center text-amber-500">
+                  <li class="h-8 w-8 text-amber-500 hover:text-amber-600 focus:text-amber-700">
+                    <a @click="scrolling(0)" href="#home"><HomeIcon /> </a>
                   </li>
-                  <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
-                    <a @click="scrolling(632)" href="#about">About</a>
+                  <li class="h-8 w-8 text-amber-500 hover:text-amber-600 focus:text-amber-700">
+                    <a @click="scrolling(632)" href="#about"><AboutIcon /></a>
                   </li>
-                  <li class="text-amber-500 hover:text-amber-600 focus:text-amber-700">
-                    <a @click="scrolling(1070)" href="#work">Work</a>
+                  <li class="h-8 w-8 text-amber-500 hover:text-amber-600 focus:text-amber-700">
+                    <a @click="scrolling(1070)" href="#work"><CodeIcon /></a>
                   </li>
                 </ul>
               </div>
             </div>
             <div v-if="navigation" class="fixed inset-0 z-40" @click="hideNavigation" />
           </div>
-          <div class="hidden md:block w-5 h-5 mr-4 cursor-pointer" @click="showNavigation">
+          <div class="hidden md:block w-5 h-5 ml-4 cursor-pointer" @click="showNavigation">
             <p class="w-full h-full text-white"><menu-icon class="w-full h-full" /></p>
           </div>
           <button
