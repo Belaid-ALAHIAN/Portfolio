@@ -10,7 +10,8 @@ import github from './icons/github.vue'
       <div
         v-motion
         :initial="{ opacity: 0 }"
-        :visible="{ opacity: 1 }"
+        :enter="{ opacity: 1 }"
+        :visible-once="{ opacity: 1 }"
         :delay="1000"
         class="items-center px-20 sm:px-2 mx-auto pb-5"
       >
