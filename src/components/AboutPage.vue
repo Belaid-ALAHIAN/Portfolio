@@ -56,11 +56,14 @@ import github from './icons/github.vue'
                       <p>+212773284140</p>
                     </div>
                     <div class="flex justify-center gap-2 my-4">
-                      <github class="h-6 w-6" />
-                      <linkedin class="h-6 w-6" />
+                      <a href="https://github.com/Belaid-ALAHIAN"><github class="h-6 w-6" /></a>
+                      <a href="https://www.linkedin.com/in/belaid-alahian/"
+                        ><linkedin class="h-6 w-6"
+                      /></a>
                       <twiter class="h-6 w-6" />
                     </div>
                   </div>
+
                   <button
                     type="button"
                     class="text-center mt-4 rounded-full font-bold border border-transparent bg-amber-500 px-3 py-2 text-sm leading-4 text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2"
