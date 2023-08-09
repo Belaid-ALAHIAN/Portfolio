@@ -11,6 +11,7 @@ import Loading from 'vue-loading-overlay'
 import HomeIcon from '@/components/icons/HomeIcon.vue'
 import AboutIcon from '@/components/icons/AboutIcon.vue'
 import CodeIcon from '@/components/icons/CodeIcon.vue'
+import ResumeIcon from '@/components/icons/ResumeIcon.vue'
 import { ref, onMounted } from 'vue'
 
 let isLoading = ref(true)
@@ -116,8 +117,8 @@ onMounted(() => {
 
         <AboutPage id="#about" class="pb-8" />
         <WorkPage id="#work" />
-        <div class="h-12 border-t border-gray-801 py-3">
-          <p class="text-center text-amber-500">resume</p>
+        <div class="h-12 border-t border-gray-801 py-3 flex justify-center">
+          <a href="../public/cv.pdf" download="cv.pdf"><ResumeIcon class="h-6 w-6" /></a>
         </div>
       </div>
     </div>
@@ -129,7 +130,10 @@ onMounted(() => {
       <div class="h-3 w-px bg-amber-500"></div>
     </div>
     <a href="https://www.linkedin.com/in/belaid-alahian/"><InIcon /></a>
-
+    <div class="flex justify-center p-1">
+      <div class="h-3 w-px bg-amber-500"></div>
+    </div>
+    <a href="../public/cv.pdf"><ResumeIcon class="h-6 w-6" /></a>
     <div class="flex justify-center p-1">
       <div class="h-20 w-px bg-amber-500"></div>
     </div>
